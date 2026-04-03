@@ -5,7 +5,10 @@ import Pagination from "components/Pagination";
 import { BASE_URL } from "utils/request";
 import { MoviePage } from "types/movies";
 
+
+
 function Listing() {
+
 
     const [pageNumber, setPageNumber] = useState(0);
 
