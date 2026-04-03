@@ -1,1 +1,1 @@
-export const BASE_URL = "https://dsmovie-a99v.onrender.com";
+const BASE_URL = process.env.REACT_APP_API_URL;
