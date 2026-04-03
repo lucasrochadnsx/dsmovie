@@ -1,4 +1,3 @@
 
-
-export const BASE_URL = "https://dsmovie-m5fc.onrender.com"; // deve ter REACT_APP_!
+export const BASE_URL = process.env.REACT_APP_API_URL;
 

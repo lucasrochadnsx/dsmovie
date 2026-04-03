@@ -25,11 +25,14 @@ function Listing() {
     });
 
     useEffect(() => {
+        console.log("API URL:", BASE_URL);
         axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`)
             .then(response => {
                 const data = response.data as MoviePage;
                 setPage(data);
-            });
+            }).catch(err => {
+            console.error("Erro ao buscar filmes:", err);
+        });
     }, [pageNumber]);
 
     const handlePageChange = (newPageNumber : number) => {
